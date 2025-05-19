@@ -2,7 +2,6 @@
 
 import { useEffect, useState, useMemo, useCallback } from 'react';
 import { useParams } from 'next/navigation';
-import Link from 'next/link';
 import {
   FiUser, FiMail, FiPhone, FiGlobe, FiMapPin
 } from 'react-icons/fi';
