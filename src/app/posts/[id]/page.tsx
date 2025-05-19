@@ -32,7 +32,7 @@ async function getUser(id: string): Promise<User | null> {
 }
 
 // 👇 Update this according to Next.js App Router convention
-export default async function UserDetailPage({
+export default async function PostDetailPage({
   params,
 }: {
   params: { id: string };
