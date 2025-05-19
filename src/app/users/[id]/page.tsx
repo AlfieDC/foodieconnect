@@ -1,6 +1,7 @@
 import React from "react";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image"; // <-- Import Image from next/image
 
 // Sample categories
 const categories = [
@@ -121,10 +122,12 @@ export default async function UserDetailPage({ params }: Props) {
                 key={post.id}
                 className="bg-white border border-gray-200 rounded-2xl shadow hover:shadow-lg transition overflow-hidden flex flex-col"
               >
-                <img
+                <Image
                   src={`https://source.unsplash.com/600x400/?food&sig=${post.id}`}
                   alt={`Food image for post ${post.title}`}
-                  className="w-full h-48 object-cover"
+                  width={600}
+                  height={400}
+                  className="object-cover w-full h-48"
                 />
                 <div className="p-6 flex flex-col justify-between flex-grow">
                   <div>
