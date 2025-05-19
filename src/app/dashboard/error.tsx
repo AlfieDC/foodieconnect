@@ -27,8 +27,7 @@ export default function DashboardError({
             >
               Try again
             </button>
-            <a
-              href="/"
+            <a href="/"
               className="px-4 py-2 border border-input rounded-lg hover:bg-card transition-colors"
             >
               Go home
