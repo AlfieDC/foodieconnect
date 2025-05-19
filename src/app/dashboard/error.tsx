@@ -1,6 +1,7 @@
 'use client';
 
 import { FiAlertCircle } from 'react-icons/fi';
+import Link from 'next/link';  // <-- Add this import
 
 export default function DashboardError({
   error,
@@ -27,7 +28,8 @@ export default function DashboardError({
             >
               Try again
             </button>
-            <Link href="/"
+            <Link
+              href="/"
               className="px-4 py-2 border border-input rounded-lg hover:bg-card transition-colors"
             >
               Go home
@@ -37,4 +39,4 @@ export default function DashboardError({
       </div>
     </div>
   );
-} 
+}
