@@ -4,10 +4,6 @@ import "./globals.css";
 import { AuthProvider } from '@/context/AuthContext';
 import Link from 'next/link';
 
-<Link href="/users" className="text-sm font-medium hover:underline">
-  Users
-</Link>
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
