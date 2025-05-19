@@ -1,5 +1,3 @@
-
-
 import { FiUsers, FiMessageSquare, FiFileText } from 'react-icons/fi';
 import { ReactNode } from 'react';
 import { getStats } from '@/lib/api';
@@ -145,46 +143,5 @@ function FeatureCard({ title, description, link }: FeatureCardProps) {
       <h3 className="text-xl font-semibold mb-2">{title}</h3>
       <p className="text-muted-foreground">{description}</p>
     </a>
-  );
-}
-
-function BarGraph({ stats }: { stats: { users: number; posts: number; comments: number } }) {
-  const max = Math.max(stats.users, stats.posts, stats.comments);
-
-  const bars = [
-    { label: 'Foodies', value: stats.users, color: 'from-blue-400 to-blue-600' },
-    { label: 'Posts', value: stats.posts, color: 'from-cyan-400 to-cyan-600' },
-    { label: 'Comments', value: stats.comments, color: 'from-indigo-400 to-indigo-600' },
-  ];
-
-  return (
-    <div className="flex justify-center items-end gap-8 h-56 mt-12">
-      {bars.map((bar) => (
-        <div key={bar.label} className="flex flex-col items-center">
-          <div
-            className={`
-              w-16
-              rounded-t-full
-              bg-gradient-to-t ${bar.color}
-              shadow-lg
-              relative
-              flex items-end
-              transition-all
-            `}
-            style={{
-              height: `${(bar.value / max) * 180 + 40}px`,
-              boxShadow: '0 4px 24px 0 rgba(59,130,246,0.15)',
-              overflow: 'hidden',
-            }}
-          >
-            <div className="absolute left-1/2 -translate-x-1/2 -top-4 w-14 h-7 bg-blue-300/70 blur-md rounded-full z-10" />
-            <span className="absolute w-full text-center text-white font-bold text-lg z-20" style={{ top: 12 }}>
-              {bar.value}
-            </span>
-          </div>
-          <span className="mt-4 text-sm font-medium text-muted-foreground">{bar.label}</span>
-        </div>
-      ))}
-    </div>
   );
 }
