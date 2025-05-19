@@ -22,7 +22,22 @@ const mapOptions = {
   ],
 };
 
-export default function Map({ address }: { address: any }) {
+interface Address {
+  street: string;
+  suite: string;
+  city: string;
+  zipcode: string;
+  geo: {
+    lat: string;
+    lng: string;
+  };
+}
+
+interface MapProps {
+  address: Address;
+}
+
+export default function Map({ address }: MapProps) {
   const [isInfoWindowOpen, setIsInfoWindowOpen] = useState(false);
 
   const center = useMemo(() => ({
