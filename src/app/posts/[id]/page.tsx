@@ -31,12 +31,8 @@ async function getUser(id: string): Promise<User | null> {
   return res.json();
 }
 
-// 👇 Update this according to Next.js App Router convention
-export default async function PostDetailPage({
-  params,
-}: {
-  params: { id: string };
-}) {
+// Removed the explicit type on the function props
+export default async function PostDetailPage({ params }: any) {
   const user = await getUser(params.id);
 
   if (!user) notFound();
