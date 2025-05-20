@@ -38,7 +38,7 @@ interface PostDetailPageProps {
   };
 }
 
-export default async function PostDetailPage({ params }: PostDetailPageProps) {
+export default async function UsersDetailPage({ params }: PostDetailPageProps) {
   const user = await getUser(params.id);
 
   if (!user) notFound();
