@@ -1,7 +1,7 @@
 import React from "react";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import Image from "next/image"; // <-- Import Image from next/image
+import Image from "next/image";
 
 // Sample categories
 const categories = [
@@ -62,11 +62,12 @@ async function getPosts(): Promise<Post[]> {
   return res.json();
 }
 
-interface Props {
+// Correctly typed component props for Next.js App Router
+export default async function UserDetailPage({
+  params,
+}: {
   params: { id: string };
-}
-
-export default async function UserDetailPage({ params }: Props) {
+}) {
   const user = await getUser(params.id);
   const posts = await getPosts();
 
