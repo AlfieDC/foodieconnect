@@ -37,7 +37,7 @@ Then open your browser and go to:
 👨‍💻 Team Member Contributions
 | Name                    | Contributions   |
 | ----------------------- | --------------- |
-| Alfie Dyne L. Castro    |                 |
+| Alfie Dyne L. Castro    |  Led the development of user authentication and authorization flows, implemented dynamic post listing and detail pages with JSONPlaceholder API integration, managed local storage for temporary data persistence, created data visualization components using ApexCharts, integrated Google Maps for user location display, structured the app using Next.js and Tailwind CSS, and helped design the overall user interface and navigation flow.|
 | Julius Escanilla        | *(To be added)* |
 | Justin Gojar            | *(To be added)* |
 | Cyrene Jane C. Teodocio | *(To be added)* |
