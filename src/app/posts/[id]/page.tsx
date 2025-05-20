@@ -1,7 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 
-// Define the User type
 type User = {
   id: number;
   name: string;
@@ -21,7 +20,6 @@ type User = {
   };
 };
 
-// Fetch user by ID
 async function getUser(id: string): Promise<User | null> {
   const res = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`, {
     cache: "no-store",
@@ -31,14 +29,11 @@ async function getUser(id: string): Promise<User | null> {
   return res.json();
 }
 
-// Props from the dynamic route
-interface UserDetailPageProps {
-  params: {
-    id: string;
-  };
-}
+type PageProps = {
+  params: { id: string };
+};
 
-export default async function UsersDetailPage({ params }: UserDetailPageProps) {
+export default async function Page({ params }: PageProps) {
   const user = await getUser(params.id);
 
   if (!user) notFound();
