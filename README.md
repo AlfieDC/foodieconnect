@@ -49,10 +49,17 @@ Then open your browser and go to:
 🛠️ Tech Stack
 
 Framework: Next.js (App Router)
+
 Styling: Tailwind CSS
+
 UI Components: ShadCN UI
+
 State/Data Management: React Query
+
 Visualization: ApexCharts
+
 Map Integration: Google Maps Embed API
+
 Mock API: JSONPlaceholder
+
 Authentication: Simulated using localStorage
