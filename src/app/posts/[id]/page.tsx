@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 
-// Define the User type based on JSONPlaceholder
+// Define the User type
 type User = {
   id: number;
   name: string;
@@ -21,25 +21,25 @@ type User = {
   };
 };
 
+// Fetch user by ID
 async function getUser(id: string): Promise<User | null> {
   const res = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`, {
     cache: "no-store",
   });
 
   if (!res.ok) return null;
-
   return res.json();
 }
 
-// Removed the explicit type on the function props
-export default async function PostDetailPage({
-  params,
-}: {
-  params: { id: string };
-}) {
-  const user = await getUser(params.id);
-  ...
+// Props from the dynamic route
+interface PostDetailPageProps {
+  params: {
+    id: string;
+  };
+}
 
+export default async function PostDetailPage({ params }: PostDetailPageProps) {
+  const user = await getUser(params.id);
 
   if (!user) notFound();
 
