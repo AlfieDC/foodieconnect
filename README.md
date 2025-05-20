@@ -44,7 +44,7 @@ Then open your browser and go to:
 
 🌐 Deployed URL
 
-🔗 Coming soon on Vercel
+foodieconnect-three.vercel.app
 
 🛠️ Tech Stack
 
