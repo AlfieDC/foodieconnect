@@ -3,14 +3,13 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 
-// Define the type for dynamic route params
 type Props = {
   params: {
     id: string;
   };
 };
 
-export default async function UsersDetailPage({ params }: Props) {
+export default async function PostDetailPage({ params }: Props) {
   const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${params.id}`);
 
   if (!res.ok) {
@@ -29,4 +28,5 @@ export default async function UsersDetailPage({ params }: Props) {
     </div>
   );
 }
+
 
