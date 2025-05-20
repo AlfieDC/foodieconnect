@@ -24,17 +24,64 @@ FoodieConnect allows users to:
 ```bash
 git clone https://github.com/AlfieDC/foodieconnect.git
 cd foodieconnect
-
-Install dependencies
-
+2. Install dependencies
+bash
+Copy code
 npm install
 # or
 yarn install
-
-Run the development server
-
+3. Run the development server
+bash
+Copy code
 npm run dev
 # or
 yarn dev
-
 Then open your browser and go to http://localhost:3000.
+
+👨‍💻 Team Member Contributions
+Name	Contributions
+Alfie Dyne L. Castro	(To be added)
+Julius Escanilla	(To be added)
+Justin Gojar	(To be added)
+Cyrene Jane C. Teodocio	(To be added)
+
+🌐 Deployed URL
+🔗 Coming soon on Vercel
+
+🛠️ Tech Stack
+Framework: Next.js (App Router)
+
+Styling: Tailwind CSS
+
+UI Components: ShadCN UI
+
+State/Data Management: React Query
+
+Visualization: ApexCharts
+
+Map Integration: Google Maps Embed API
+
+Mock API: JSONPlaceholder
+
+Authentication: Simulated using localStorage
+
+🗂 Folder Structure
+php
+Copy code
+foodieconnect/
+├── app/                    # Application routes and pages
+├── components/             # Reusable UI components
+├── context/                # Auth context
+├── public/                 # Static assets
+├── styles/                 # Global styles
+├── README.md               # Documentation
+├── package.json            # Dependencies and scripts
+📝 Notes
+Authentication is simulated; no backend is connected.
+
+All user and post data are fetched from JSONPlaceholder or stored temporarily via localStorage.
+
+Charts and maps are embedded for enhanced user experience.
+
+Ready to be extended with real-time data and full backend services.
+
