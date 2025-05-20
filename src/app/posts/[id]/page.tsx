@@ -32,13 +32,13 @@ async function getUser(id: string): Promise<User | null> {
 }
 
 // Props from the dynamic route
-interface PostDetailPageProps {
+interface UserDetailPageProps {
   params: {
     id: string;
   };
 }
 
-export default async function UsersDetailPage({ params }: PostDetailPageProps) {
+export default async function UsersDetailPage({ params }: UserDetailPageProps) {
   const user = await getUser(params.id);
 
   if (!user) notFound();
