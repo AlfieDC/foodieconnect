@@ -46,6 +46,10 @@ Then open your browser and go to:
 
 foodieconnect-three.vercel.app
 
+Alternative link:
+
+https://foodieconnect-kappa.vercel.app/
+
 🛠️ Tech Stack
 
 Framework: Next.js (App Router)
