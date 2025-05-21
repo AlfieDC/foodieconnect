@@ -17,7 +17,7 @@ FoodieConnect allows users to:
 1. Clone the repository
    
    git clone https://github.com/AlfieDC/foodieconnect.git
-    cd foodieconnect
+   cd foodieconnect
    
 3. Install dependencies
    
@@ -44,7 +44,8 @@ Then open your browser and go to:
 
 🌐 Deployed URL
 
-foodieconnect-three.vercel.app
+[foodieconnect-three.vercel.app
+](https://foodieconnect-three.vercel.app/)
 
 Alternative link:
 
