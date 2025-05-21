@@ -52,7 +52,12 @@ Alternative link:
 https://foodieconnect-kappa.vercel.app/
 
 Video Link: 
+
 https://drive.google.com/file/d/1do6fUbpet9oQC_5EVSJpI0-eDi9iUwaK/view?usp=sharing
+
+or
+
+https://drive.google.com/drive/folders/10ZvWNGGTmAOQKV3iIvMqtF-NUzjR7-Xr?usp=sharing
 
 🛠️ Tech Stack
 
