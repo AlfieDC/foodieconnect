@@ -40,7 +40,7 @@ Then open your browser and go to:
 | Alfie Dyne L. Castro    |  Led the development of user authentication and authorization flows, implemented dynamic post listing and detail pages with JSONPlaceholder API integration, managed local storage for temporary data persistence, created data visualization components using ApexCharts, integrated Google Maps for user location display, structured the app using Next.js and Tailwind CSS, and helped design the overall user interface and navigation flow.|
 | Julius Escanilla        | *(To be added)* |
 | Justin Gojar            | Redesigned the user interface to enhance usability and visual consistency, updated key components for improved responsiveness across devices, and introduced new features including advanced search filters and user-friendly navigation flows. Refactored existing components to align with modern UI/UX practices, integrated feedback-driven design changes, and collaborated on improving accessibility standards. Maintained and optimized existing features such as dynamic post listings with JSONPlaceholder API, local storage handling, data visualizations using ApexCharts, and Google Maps location integration within a Next.js and Tailwind CSS framework. |
-| Cyrene Jane C. Teodocio | *(To be added)* |
+| Cyrene Jane C. Teodocio | Contributions include debugging, fixing, and recreating code, as well as identifying issues and recommending necessary fixes and changes. Additionally, there is a focus on efficiently deploying projects using Vercel, ensuring that all aspects of the code are thoroughly reviewed and optimized for performance. |
 
 🌐 Deployed URL
 
